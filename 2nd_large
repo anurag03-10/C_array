@@ -2,7 +2,7 @@
 void main()
 {
  int a,y, b[10],s=0,p=-32765;
- printf("Enter numbers in array ");
+ printf("Enter Numbers in array ");
  
  for(a=0;a<10;a++)
  {
