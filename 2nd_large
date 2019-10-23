@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+ int a,y, b[10],s=0,p=-32765;
+ printf("Enter numbers in array ");
+ 
+ for(a=0;a<10;a++)
+ {
+  scanf("%d",&b[a]);
+  if(b[a]>=p)
+  p=b[a];
+  y=a;
+ }
+ p=-32767;
+ for(a=0;a<10;a++)
+ {
+  if(b[a]>=p && a!=y)
+  p=b[a];
+ }
+  printf("\n 2nd largest no. among all elements in the array is %d ",p);
+ 
+}
