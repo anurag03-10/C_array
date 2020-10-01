@@ -1,10 +1,10 @@
 #include<stdio.h>
 void main()
 {
- int g,a=0,c=0, b[5];
+ int g,a,c=0, b[5];
  
  printf("Enter numbers  ");
- for(;a<5;a++)
+ for(a=0;a<5;a++)
  {
   scanf("%d",&b[a]);
  } 
@@ -14,9 +14,15 @@ void main()
  {
  if(b[a]==g)
   {
-  c++; 
+   c++; 
+  }
  }
+ if(c==0)
+ {
+  printf("The no. %d hasn't occured in the array \n",g);
  }
-  printf("The no. %d occured in the array for %d times ",g,c);
-
-} 
+ else
+ {
+   printf("The no. %d occured in the array for %d times \n",g,c);
+ }
+}
